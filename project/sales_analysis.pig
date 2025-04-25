@@ -26,11 +26,9 @@ liked_by_loc = FOREACH grp_liked_loc GENERATE group.location AS location, group.
 sorted_liked_loc = ORDER liked_by_loc BY location, likes DESC;
 
 -- Products with Decrementing Sales
--- Uncomment if a 'date' field exists
--- sales_by_date = GROUP sales BY (product, date);
--- daily_qty = FOREACH sales_by_date GENERATE group.product AS product, group.date AS date, SUM(sales.quantity) AS qty;
--- sorted_daily = ORDER daily_qty BY product, date;
--- Use UDF or additional logic to detect declining trend
+sales_by_date = GROUP sales BY (product, date);
+daily_qty = FOREACH sales_by_date GENERATE group.product AS product, group.date AS date, SUM(sales.quantity) AS qty;
+sorted_daily = ORDER daily_qty BY product, date;
 
 -- Dump top results
 DUMP top_product;
