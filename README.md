@@ -1,1 +1,3 @@
 # Electric-Essentials-Sales-using-Demographics
+
+Electric Essentials Sales using Demographics is a big data analytics project designed to analyze the retail sales of electrical products across various locations to uncover patterns in customer behavior and product performance. The project utilizes the Hadoop ecosystem, particularly Apache Pig, to process and transform large datasets stored in HDFS. By leveraging Pig Latin scripts, it performs data cleaning, aggregation, and filtering to identify the most sold and most liked products in different regions, as well as detect declining sales trends. The insights generated can help businesses make data-driven decisions in inventory management, regional marketing, and customer engagement strategies.
