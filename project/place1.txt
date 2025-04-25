@@ -1,0 +1,5 @@
+hammer 10,40,30
+screw drivers 50,40,65
+pliers 20,80,48
+nails 150,200,264
+
